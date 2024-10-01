@@ -10,22 +10,14 @@ body {
   font-family: "Rubik", sans-serif;
   height: 100vh;
   overflow: hidden;
+  background-image: url(../assets/background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .page-container {
   height: 100vh;
   width: 100vw;
-}
-.background-wrap {
-  object-fit: cover;
-  height: 100vh;
-  width: 100vw;
-
-  @media (max-width: 768px) {
-    object-fit: cover;
-    rotate: 90deg;
-    width: 123vw;
-    height: 100vh;
-  }
 }
 
 // Room Page
@@ -154,7 +146,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 3px 3px 10px #6d6d6d, -3px -3px 10px #6d6d6d;
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     top: 0;
     width: 100vw;
     height: 100vh;
@@ -210,7 +202,7 @@ body {
     height: 10%;
     background-color: #fbae3c;
     border-radius: 0 0 25px 25px;
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
       border-radius: 0;
     }
     form {
