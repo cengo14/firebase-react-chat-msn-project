@@ -27,13 +27,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
-  @media (max-width: 600px) {
-    top: 15%;
-    left: 60%;
-    width: 100vw;
-    height: 94vh;
-    border-radius: 0;
-  }
 }
 .form {
   width: 400px;
@@ -331,7 +324,7 @@ body {
   }
 }
 .modal {
-  background: #8d8c8c;
+  background: transparent;
   color: #d3d3d3;
   position: absolute;
   width: 70vw;
