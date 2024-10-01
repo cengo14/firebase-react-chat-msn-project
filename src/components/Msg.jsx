@@ -35,7 +35,6 @@ const Msg = ({ data }) => {
     return (
       <div className="msg-user">
         <div style={userMessageStyle} className="msg-content">
-          <p>{data.text}</p>
           {data.media.image && (
             <div className="msg-img-container">
               <img
@@ -45,6 +44,7 @@ const Msg = ({ data }) => {
               />
             </div>
           )}
+          <p>{data.text}</p>
         </div>
         <Modal img={selectedImage} isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
@@ -56,7 +56,7 @@ const Msg = ({ data }) => {
         <img src={data.author.photo} alt="profile" />
         <div style={messageStyle} className="msg-content">
           <span>{data.author.name.split(" ")[0]}</span>
-          <p>{data.text}</p>
+
           {data.media.image && (
             <div className="msg-img-container">
               <img
@@ -66,6 +66,7 @@ const Msg = ({ data }) => {
               />
             </div>
           )}
+          <p>{data.text}</p>
         </div>
         <span>{data.createdAd}</span>
       </div>
