@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect, useRef, useState } from "react";
-import background from "../assets/background.svg";
+
 import EmojiPicker from "emoji-picker-react";
 
 import { auth, db } from "../firebase";
@@ -59,6 +59,7 @@ const ChatPage = ({ room, setRoom }) => {
       },
       createdAt: serverTimestamp(),
     });
+    e.target.reset();
   };
   useEffect(() => {
     const messagesCol = collection(db, "messages");

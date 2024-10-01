@@ -58,9 +58,20 @@ const Msg = ({ data }) => {
         <div style={messageStyle} className="msg-content">
           <span>{data.author.name.split(" ")[0]}</span>
           <p>{data.text}</p>
+          {data.media.image && (
+            <div className="msg-img-container">
+              <img
+                onClick={() => modalOpen(data.media.image)}
+                className="msg-img"
+                src={data.media.image}
+                alt=""
+              />
+            </div>
+          )}
         </div>
         <span>{data.createdAd}</span>
       </div>
+      <Modal img={selectedImage} isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };

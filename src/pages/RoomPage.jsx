@@ -12,7 +12,7 @@ const RoomPage = ({ setIsAuth, setRoom }) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    const room = e.target[0].value.toUpperCase();
+    const room = e.target[0].value.toUpperCase().trim();
     setRoom(room);
   };
   return (
