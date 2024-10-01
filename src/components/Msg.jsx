@@ -40,7 +40,6 @@ const Msg = ({ data }) => {
             <div className="msg-img-container">
               <img
                 onClick={() => modalOpen(data.media.image)}
-                className="msg-img"
                 src={data.media.image}
                 alt=""
               />
@@ -62,7 +61,6 @@ const Msg = ({ data }) => {
             <div className="msg-img-container">
               <img
                 onClick={() => modalOpen(data.media.image)}
-                className="msg-img"
                 src={data.media.image}
                 alt=""
               />
