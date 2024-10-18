@@ -10,6 +10,10 @@
 - **Mesajlara Emoji Ekleme**: Emoji Picker ile mesajlarınıza renk katın.
 - **SCSS ile Özel Tasarım**: Modern ve duyarlı tasarım için SCSS kullanıldı.
 
+## Ekran Görüntüsü
+
+![Maksat Muhabbet](screenshot.gif)
+
 ## Kullanılan Teknolojiler
 
 - **React**: Kullanıcı arayüzü geliştirmek için.
@@ -63,10 +67,6 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
 - [emoji-picker-react](https://www.npmjs.com/package/emoji-picker-react)
 - [react-icons](https://react-icons.github.io/react-icons/)
 - [uuid](https://www.npmjs.com/package/uuid)
-
-## Ekran Görüntüleri
-
-(Screenshot'lar ekleyin)
 
 ## Katkıda Bulunma
 
